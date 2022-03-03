@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./logoo.jpg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC |**Welcome Student**| QUIZ</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://kit.fontawesome.com/207ef960a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main class="mainBox">
+        <!-- ////QUIZ FORM BTN START//// -->
+
+        <section class="quizForm">
+            <div class="formHeading">
+                <h2>QUIZ FORM</h2>
+                <br>
+                <p>Please Fill this form</p>
+                <br><br>
+            </div>
+            <div>
+                <input type="text" id="FormName" placeholder="Your Name...">
+                <small id="FormNameError"></small>
+            </div>
+
+
+            <div>
+                <input type="text" id="FormEmail" placeholder="Your Email Address...">
+                <small id="FormEmailError"></small>
+            </div>
+
+            <div>
+                <input type="text" id="FormCell" placeholder="Your Cell Number...">
+                <small id="FormCellError"></small>
+            </div>
+
+            <div>
+                <input type="text" id="FormSchool" placeholder="Your Institute Name...">
+                <small id="FormSchoolError"></small>
+            </div>
+
+            <div>
+                <button onclick="onSubmit()">Submit</button>
+            </div>
+
+        </section>
+        <!-- ////QUIZ FORM BTN END//// -->
+
+
+
+
+        <!-- ////QUIZ START BTN START//// -->
+        <section class="quizStartBtn hide">
+            <button id="quizBtn">QUIZ START?</button>
+        </section>
+        <!-- ////QUIZ START BTN END//// -->
+
+
+        <!-- /////Quiz option box START//// -->
+
+        <section class="QuestBox hide">
+
+            <section class="userInfo">
+                <div class="userName">
+                    <p id="setUserName">Name: Jaffar Aman</p>
+                    <p id="setEmail">Email: amanjaffar50@gmail.com</p>
+                </div>
+
+            </section>
+
+            <section class="question">
+
+                <h2 id="Quizquestion">1. what is the capital of pakistan?</h2>
+                <ul class="optionUl">
+                    <li class="option"> </li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                </ul>
+            </section>
+
+            <section class="quizFooter">
+
+                <div id="quesNum">
+                     1 to 5
+                </div>
+
+                <div class="nextQues">
+                    <button onclick="nextQuestion()" id="nextQuest">NEXT QUES</button>
+                </div>
+
+                </section>
+
+
+        </section>
+
+
+
+        <!-- /////Quiz option box END//// -->
+
+
+            <!-- //////result BOX START//// -->
+            <section class="resultBox hide" id="resultMainBox">
+
+                <div class="resultImg">
+                    <img src="img/result-removebg-preview.png" width="100%"  alt="">
+                </div>
+
+                <div class="congratsHeading">
+                    <h1>Congratulations!</h1>
+                    <p id="wordingScore">Your got the 10th marks place in 10</p>
+                </div>
+
+                <div class="RightOption" >
+                    <p id="rightCount">
+                    <i class="fas fa-check-circle" style="color: green;"></i>12 Corrects</p>
+                <p id="wrongCount">
+                    <i class="fas fa-times-circle" style="color: red;"></i>5 Wrong</p>
+                </div>
+                <div class="socialLink">
+                    <span > <i class="fab fa-facebook-square"></i> Share</span>
+                    <span><i class="fab fa-whatsapp-square"></i>Share</span>
+                    <span><i class="fab fa-twitter-square"></i>Share</span>
+                </div>
+                <div class="resetBtn">
+                    <button onclick="window.location.reload()"> Reset Quiz</button>
+                </div>
+            </section>
+
+            <!-- //////result BOX END//// -->
+
+    </main>
+
+</body>
+<script src="app2.js"></script>
+
+</html>
